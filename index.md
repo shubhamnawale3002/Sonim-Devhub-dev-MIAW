@@ -9,9 +9,11 @@
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	function initEmbeddedMessaging() {
+		console.log('sonim chat devhub dev');
 		try {
+			console.log('sonim chat devhub dev try block');
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-
+			console.log('sonim chat devhub dev ',embeddedservice_bootstrap.settings.language);
 			embeddedservice_bootstrap.init(
 				'00Dca000001GNMf',
 				'EMEA_Web_Chat_SupportEmbedded',
@@ -21,6 +23,7 @@
 				}
 			);
 		} catch (err) {
+			console.log('error in catch sonim chat devhub dev');
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
